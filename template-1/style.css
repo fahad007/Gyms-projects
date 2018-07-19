@@ -1,0 +1,298 @@
+@import url('https://fonts.googleapis.com/css?family=Oswald:300,400,600,700');
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,700,900');
+@import url('http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css');
+
+
+main{
+    font-family: 'Roboto', sans-serif;
+    font-weight: normal;
+    font-size: 18px ;
+    line-height: 1.4;
+    color: #222222;
+}
+
+
+/*HEADINGS TYPOGRAPHY*/
+h1, h2, h3, h4, h5 {
+    font-family: 'Oswald', sans-serif;
+    line-height: 1.3;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+h1 {
+    font-size: 54px;
+}
+h2 {
+    font-size: 48px;
+}
+h3 {
+    font-size: 44px;
+}
+h4 {
+    font-size: 30px;
+}
+h5 {
+    font-size: 24px;
+}
+
+
+
+/*SITE TYPOGRAPHY*/
+.pink {
+    color: #ff00f0;
+}
+.white{
+    color:#fff;
+}
+.red{
+    color:#FF2207;
+}
+.marker{
+    background: yellow;
+    font-weight: 600;
+    color: #000;
+    padding: 0 5px;
+}
+.normal{
+    font-weight: 400;
+}
+.light{
+    font-weight: 300;
+}
+.fa{
+    color: #ff00f0;
+    margin-right: 7px;
+}
+p {
+    margin-bottom: 20px;
+    line-height: 1.6px;
+}
+
+
+
+/*IMAGES STYLES*/
+img{
+    max-width: 100%;
+}
+.single-img {
+    margin: 20px auto;
+    display: block;
+    max-width: 70%;
+}
+.left-img{
+	max-width: 400px;
+	margin-right: 50px;
+}
+.right-img{
+	max-width: 400px;
+	margin-left: 50px;
+}
+
+
+
+/*COMMON HEADER STYLES HERE*/
+.common-header {
+    background: #002030;
+    padding: 50px 0 !important;
+    text-align: center;
+    color: #fff;
+}
+.common-header.pink-header {
+    background: #ff00f0;
+    color: #fff;
+}
+.common-header.pink-header h1{
+    color: #fff;
+}
+.white-area{
+    padding: 80px 0 !important;
+}
+
+
+
+/*DOUBLE AREA STYLES*/
+.double-area {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin: 50px 0;
+}
+.double-area.right .double-area-text{
+    margin-right: 50px;
+}
+.double-area.left .double-area-text{
+    margin-left: 50px;
+}
+
+
+/*LIST STYLES*/
+.styled-list {
+    list-style-type: none;
+    margin: 35px 0;
+    padding: 0;
+}
+.styled-list li {
+    margin-bottom: 10px;
+    font-family: 'Oswald', sans-serif;
+    font-size: 20px;
+    padding-left: 45px;
+    position: relative;
+    text-transform: uppercase;
+}
+.styled-list li::after {
+    content: "";
+    width: 25px;
+    height: 20px;
+    position: absolute;
+    left: 0;
+    top: 8px;
+    background: #ff00f0;
+}
+
+
+
+/*BOXED STYLES*/
+.boxed {
+    padding: 50px;
+    border: 5px solid #fff;
+    margin:45px 0;
+    background: none;
+    width: 100%;
+}
+.red-box{
+    border: 5px dashed #FF2207;
+}
+.pink-box{
+    border: 5px dashed #ff00f0;
+}
+.bg-box {
+    background: rgba(0,0,0,.7);
+    border: none;
+    -webkit-box-shadow: 0 0 15px #FF00F0;
+            box-shadow: 0 0 15px #FF00F0;
+}
+
+
+
+
+/*SITE BUTTON STYLES*/
+.site-btn {
+    background: #FF762C;
+    color: #fff;
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
+    font-size: 4vw !important;
+    display: block;
+    padding: 20px 15px;
+    line-height: 1.1 !important;
+    margin: 0;
+    -webkit-transition: all .3s;
+    -o-transition: all .3s;
+    transition: all .3s;
+    -webkit-box-shadow: 5px 5px 10px 0 rgba(0,0,0,.2);
+    box-shadow: 5px 5px 10px 0 rgba(0,0,0,.2);
+    border-radius: 5px;
+    text-align: center;
+}
+.site-btn:hover {
+    -webkit-box-shadow: 5px 5px 10px 0 rgba(0,0,0,.0);
+            box-shadow: 5px 5px 10px 0 rgba(0,0,0,.0);
+    border-radius: 0px;
+    text-decoration: none;
+}
+.site-btn span {
+    display: block;
+    font-weight: 300;
+    font-size: .8em;
+}
+
+
+
+
+
+/*BANNER STYLES*/
+.banner {
+    background: linear-gradient(rgba(0,0,0, .7), rgba(0,0,0,.7)) repeat 0 0%, rgba(0, 0, 0, 0) url("img/bg-1.jpeg") no-repeat center center / cover;
+    padding: 60px 0;
+    color: #fff;
+    text-align: center;
+}
+.banner-wrapper h5 {
+    width: 70%;
+    margin: 0 auto;
+    color: #fff;
+    margin-bottom: 15px;
+}
+.banner h1 {
+    margin: 35px 0;
+    text-shadow: 0 0 5px #333;
+    color: #fff;
+}
+.banner-wrapper h4 {
+    margin-bottom: 15px;
+}
+
+/*SECTION 1 STYLES*/
+
+
+/*SECTION 2 STYLES*/
+
+
+/*SECTION 3 STYLES*/
+
+
+/*SECTION 4 STYLES*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*RESPONSIVE STARTS HERE*/
+/*MAX WIDTH SSTARTS FROM 1199*/
+@media only screen and (max-width: 1199px) {
+main{
+    font-size: 18px;
+}
+
+}
+
+
+
+/*MAX WIDTH SSTARTS FROM 991*/
+@media only screen and (max-width: 991px) {
+
+}
+
+
+
+
+/*MAX WIDTH SSTARTS FROM 767*/
+@media only screen and (max-width: 767px) {
+main{
+    font-size: 16px;
+}
+h1 {
+    font-size: 30px;
+}
+h2 {
+    font-size: 28px;
+}
+h4 {
+    font-size: 22px;
+}
+h5 {
+    font-size: 16px;
+}
+}

@@ -1,0 +1,316 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <link rel="apple-touch-icon" sizes="180x180" href="https://vshred.com/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="https://vshred.com/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="https://vshred.com/favicon-16x16.png">
+    <link rel="manifest" href="https://vshred.com/manifest.json">
+    <link rel="mask-icon" href="https://vshred.com/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="theme-color" content="#ffffff">
+    <title>V Shred</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="V Shred">
+    <link href="stack/css/bootstrap.css" rel="stylesheet" type="text/css" media="all"/>
+    <link href="stack/css/stack-interface.css" rel="stylesheet" type="text/css" media="all"/>
+    <link href="stack/css/socicon.css" rel="stylesheet" type="text/css" media="all"/>
+    <link href="stack/css/iconsmind.css" rel="stylesheet" type="text/css" media="all"/>
+    <link href="stack/css/flickity.css" rel="stylesheet" type="text/css" media="all"/>
+    <link href="stack/css/jquery.steps.css" rel="stylesheet" type="text/css" media="all"/>
+    <link href="stack/css/theme.css" rel="stylesheet" type="text/css" media="all"/>
+    <link href="https://vshred.com/css/side-menu.css" rel="stylesheet" type="text/css" media="all"/>
+    <link href="https://vshred.com/css/custom.css" rel="stylesheet" type="text/css" media="all"/>
+    <link href="https://vshred.com/css/mobile-menus.css" rel="stylesheet" type="text/css" media="all"/>
+    <link href="https://vshred.com/css/member.css" rel="stylesheet" type="text/css" media="all"/>
+    <link href="https://vshred.com/css/bootstrap4PaddingMargins.css" rel="stylesheet" type="text/css" media="all"/>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:200,300,400,400i,500,600,700%7CMerriweather:300,300i" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="https://cdn.datatables.net/1.10.15/css/dataTables.bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/css/toastr.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/6.6.6/sweetalert2.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.1.20/jquery.fancybox.min.css" rel="stylesheet">
+
+    <link href="style.css" rel="stylesheet" type="text/css" media="all"/>
+</head>
+<body class="" >
+    <a id="start"></a>
+
+    <nav class="fixed-nav hidden-sm hidden-md hidden-lg">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-3 text-center">
+                    <a onclick="openNav()">
+                        <i class="material-icons">menu</i>
+                    </a>
+                </div>
+                <div class="col-xs-6 text-center">
+                    <img alt="V Shred" src="https://vshred.com/img/logo.svg" height="26" style="margin-bottom: 5px">
+                </div>
+                <div class="col-xs-3 text-center">
+                    <a href="https://vinsanityshred.zendesk.com/hc/en-us" target="_blank"><i class="material-icons">help</i></a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div id="mySidenav" class="sidenav">
+        <div class="p-4">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <center><img alt="V Shred" src="https://vshred.com/img/logo-vs-white.svg" style="width: 30px; margin-bottom: 3em;"></center>
+            <a href="https://vshred.com/member">My Stuff</a>
+            <a href="https://vshred.com">Home</a>
+            <a href="https://vshred.com/programs">Store</a>
+            <a href="https://vshred.com/supplements-female">Female Supplement Guide</a>
+            <a href="https://vshred.com/supplements">Male Supplement Guide</a>
+            <a href="https://vshred.com/blog">Blog</a>
+            <hr class="dashed">
+            <a href="https://vinsanityshred.zendesk.com/hc/en-us" target="_blank"><i class="fa fa-question-circle-o" aria-hidden="true"></i> Support Center</a>
+        </div>
+    </div>
+    <div class="nav-container hidden-xs">
+        <div class="bar bar--sm visible-xs">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-3 col-sm-2">
+                        <a href="/">
+                            <img class="logo logo-dark" alt="logo" src="https://vshred.com/img/logo.svg">
+                            <img class="logo logo-light" alt="logo" src="https://vshred.com/img/logo-light.svg">
+                        </a>
+                    </div>
+                    <div class="col-xs-9 col-sm-10 text-right">
+                        <a href="#" class="hamburger-toggle" data-toggle-class="#menu1;hidden-xs">
+                            <i class="icon icon--sm stack-interface stack-menu"></i>
+                        </a>
+                    </div>
+                </div>
+                <!--end of row-->
+            </div>
+            <!--end of container-->
+        </div>
+        <!--end bar-->
+        <nav id="menu1" class="bar bar--sm bar-1 hidden-xs " data-scroll-class='100vh:pos-fixed'>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-1 col-sm-2 hidden-xs">
+                        <div class="bar__module">
+                            <a href="/">
+                                <img class="logo logo-dark" alt="logo" src="https://vshred.com/img/logo.svg">
+                                <img class="logo logo-light" alt="logo" src="https://vshred.com/img/logo-light.svg">
+                            </a>
+                        </div>
+                        <!--end module-->
+                    </div>
+                    <div class="col-md-11 col-sm-12 text-right text-left-xs text-left-sm">
+                        <div class="bar__module">
+                            <ul class="menu-horizontal text-left">
+                                <li>
+                                    <a href="/">Home</a>
+                                </li>
+                                <li>
+                                    <a href="https://vshred.com/programs">Store</a>
+                                </li>
+                                <li class="dropdown">
+                                    <span class="dropdown__trigger">Supplements</span>
+                                    <div class="dropdown__container">
+                                        <div class="container">
+                                            <div class="row">
+                                                <div class="dropdown__content col-md-2 col-sm-4">
+                                                    <ul class="menu-vertical">
+                                                        <li class="">
+                                                            <a href="https://vshred.com/supplements-female">
+                                                                Female Guide
+                                                            </a>
+                                                        </li>
+                                                        <li class="">
+                                                            <a href="https://vshred.com/supplements">
+                                                                Male Guide
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <a href="https://vshred.com/blog">Blog</a>
+                                </li>
+
+                                <li class="dropdown">
+                                    <div class="bar__module">
+                                        <a class="btn btn--sm type--uppercase" href="https://vshred.com/login">
+                                            <span class="btn__text">Login</span>
+                                        </a>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <!--end module-->
+                    </div>
+                </div>
+                <!--end of row-->
+            </div>
+            <!--end of container-->
+        </nav>
+        <!--end bar-->
+    </div>
+
+    <div class="main-container">
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <main class="choyon">
+            
+            <!-- BANNER MARKUP STARTS HERE -->
+            <section class="banner">
+                <div class="container">
+                    <div class="banner-wrapper">
+                        <p>Congratulations and Welcome to The V Shred Family! <u>You will get an email to access the Fat Loss Extreme system in the next 15 minutes.</u> If you cannot find it, check your spam folder as it can turn up in there by mistake.</p>
+                        <h1><span class="pink">You Now Qualify For <u>A Free Bonus</u> Guaranteed</span> To <u>Speed-Up</u> Your Body Transformation</h1>
+                        <div class="row">
+                            <div class="col-xs-12 col-sm-8 col-md-6 col-xs-offset-0 col-sm-offset-2 col-md-offset-3">
+                                <div class="banner-Video">
+                                    <div class="embed-responsive embed-responsive-16by9">
+                                        <iframe class="embed-responsive-item" src="https://player.vimeo.com/video/204118752?autoplay=0"></iframe>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <h5><span class="red"><u>Warning:</u></span> You will only see this page and the special gifts that come with it <u>one-time</u>. Your chance to get this <u>exclusive offer</u> will be gone forever <i>once you leave this page</i>.</h5>
+                    </div>
+                </div>
+            </section>
+            <!-- BANNER MARKUP ENDS HERE -->
+
+
+
+            <section class="section-1"></section>
+            <section class="section-1"></section>
+            <section class="section-1"></section>
+            <section class="section-1"></section>
+            <section class="section-1"></section>
+            <section class="section-1"></section>
+
+        </main>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <footer class="fixed-footer hidden-sm hidden-md hidden-lg">
+            <div class="container" style="padding-top: 4px;">
+                <div class="row">
+                    <div class="col-xs-3 text-center">
+                        <a href="https://vshred.com" class="nav--button">
+                            <i class="fa fa-home" aria-hidden="true"></i>
+                            <div>Home</div>
+                        </a>
+                    </div>
+                    <div class="col-xs-3 text-center">
+                        <a href="https://vshred.com/programs" class="nav--button">
+                            <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                            <div>Store</div>
+                        </a>
+                    </div>
+                    <div class="col-xs-3 text-center">
+                        <a href="https://vshred.com/supplements" class="nav--button">
+                            <img src="https://vshred.com/img/protein-bottle.svg" height="24" class="m-0 p-0">
+                            <div>Supplements</div>
+                        </a>
+                    </div>
+                    <div class="col-xs-3 text-center">
+                        <a href="https://vshred.com/member" class="nav--button">
+                            <i class="fa fa-user-circle-o" aria-hidden="true"></i>
+                            <div class="nav--small">My Stuff</div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <footer class="text-center-xs space--xs ">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12 text-right text-center-xs">
+                        <ul class="social-list list-inline list--hover">
+                            <li>
+                                <a href="https://www.youtube.com/vshred" target="_blank">
+                                    <i class="socicon socicon-youtube icon icon--xs"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.facebook.com/thevinsanityshred/" target="_blank">
+                                    <i class="socicon socicon-facebook icon icon--xs"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.instagram.com/vshred_/" target="_blank">
+                                    <i class="socicon socicon-instagram icon icon--xs"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!--end of row-->
+                <div class="row">
+                    <div class="col-sm-7">
+                        <span class="type--fine-print">&copy;
+                            <span class="update-year"></span> 
+                            V Shred LLC
+                        </span>
+                        <a class="type--fine-print" href="https://vshred.com/privacy-policy">Privacy Policy</a>
+                        <a class="type--fine-print" href="https://vshred.com/terms-and-conditions">Terms and Conditions</a>
+                    </div>
+                    <div class="col-sm-5 text-right text-center-xs">
+                        <a class="type--fine-print" href="https://vinsanityshred.zendesk.com/hc/en-us/requests/new" target="_blank">support@vshred.com</a>
+                    </div>
+                </div>
+                <!--end of row-->
+            </div>
+            <!--end of container-->
+        </footer>
+    </div>
+
+
+    <script src="https://vshred.com/js/app.320c200e385710cda180.js"></script>
+    <script src="https://cdn.datatables.net/1.10.15/js/jquery.dataTables.min.js"></script>
+    <script src="https://cdn.datatables.net/1.10.15/js/dataTables.bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/js/toastr.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/6.6.6/sweetalert2.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.1.20/jquery.fancybox.min.js"></script>
+    <script src="stack/js/flickity.min.js"></script>
+    <script src="stack/js/parallax.js"></script>
+    <script src="stack/js/typed.min.js"></script>
+    <script src="stack/js/datepicker.js"></script>
+    <script src="stack/js/isotope.min.js"></script>
+    <script src="stack/js/ytplayer.min.js"></script>
+    <script src="stack/js/jquery.steps.min.js"></script>
+    <script src="stack/js/smooth-scroll.min.js"></script>
+    <script src="stack/js/scripts.js"></script>
+    <script src="https://vshred.com/js/side-menu.js"></script>
+
+    <script src="script.js"></script>
+</body>
+</html>
